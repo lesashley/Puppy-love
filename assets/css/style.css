@@ -1,3 +1,44 @@
+h1 {
+  font-size: 2.3rem; }
 
+h2 {
+  font-size: 1.3rem; }
+
+h3 {
+  font-size: 1.2rem; }
+
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.home {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(56, 56, 56, 0.55);
+  top: 0; }
+  .home__title {
+    text-align: center;
+    color: #fff; }
+    .home__title hr {
+      width: 300px; }
+    .home__title--btn button {
+      background-color: #EC462E;
+      border: 0;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+      padding: 8px 40px;
+      margin: 20px; }
+    .home__title--text {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

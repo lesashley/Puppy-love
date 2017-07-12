@@ -1,0 +1,13 @@
+$size-title-principal : 2.3rem;
+$size-title : 1.3rem;
+$size-subtitle : 1.2rem;
+
+h1{
+  font-size: $size-title-principal;
+}
+h2{
+  font-size: $size-title;
+}
+h3{
+  font-size: $size-subtitle;
+}

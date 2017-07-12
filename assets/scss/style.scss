@@ -1,3 +1,50 @@
+@import "fonts";
+@import "colors";
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+@mixin padding-margin($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+%flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav{
   // background-color: rgba(255, 255, 255, 0);
+}
+
+.home{
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(56, 56, 56, 0.55);
+  top: 0;
+  @extend %flex;
+  &__title{
+    text-align: center;
+    color: #fff;
+    hr{
+      width: 300px;
+    }
+    &--btn button{
+      background-color: $color-btn;
+      border: 0;
+      letter-spacing: 1.5px;
+      border-radius: 4px;
+      @include padding-margin(8px 40px, 20px);
+    }
+    &--text{
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "puppy-love",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesashley/Puppy-love.git"
+  },
+  "keywords": [
+    "sass",
+    "html"
+  ],
+  "author": "@lesashley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesashley/Puppy-love/issues"
+  },
+  "homepage": "https://github.com/lesashley/Puppy-love#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

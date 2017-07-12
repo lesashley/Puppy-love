@@ -13,19 +13,33 @@
   align-items: center;
   justify-content: center;
 }
-
-.nav{
-  // background-color: rgba(255, 255, 255, 0);
+.divider{
+  width: 50%;
+  background-color: rgba(83, 83, 83, 0.61);
+  border: 0;
+}
+.side-nav li>a {
+  color: #fff;
 }
 
-.home{
-  background-image: url(../images/banner.jpg);
-  background-repeat: no-repeat;
-  height: 100vh;
+
+.nav{
+  background: 0;
+  box-shadow: none;
+  &__hide{
+    background: $color-principal;
+  }
+}
+body{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/banner.jpg');
   background-position: center;
   background-size: cover;
-  position: relative;
   background-color: rgba(56, 56, 56, 0.55);
+  background-attachment: fixed;
+}
+.home{
+  height: 90vh;
+  position: relative;
   top: 0;
   @extend %flex;
   &__title{
@@ -47,6 +61,14 @@
       margin: 0;
     }
   }
+  &__arrow{
+    left: 46%;
+    color: #fff;
+    bottom: 30px;
+    position: absolute;
+    @extend %flex;
+    flex-direction: column;
+  }
 }
 .section1{
   background-color: $color-principal;
@@ -55,11 +77,6 @@
   &__title{
     color: #fff;
     text-align: center;
-  }
-  hr{
-    border-color: rgb(145, 145, 145);
-    color: rgb(147, 147, 147);
-    width: 67%;
   }
   &__icons{
     @extend %flex;
@@ -88,15 +105,62 @@
 }
 
 .section3{
-  padding-bottom: 30px;
+  text-align: center;
   background-color: $color-terciario;
   color: #fff;
+  @include padding-margin(40px 0, auto);
+  &__title{
+    margin-bottom: 20px;
+  }
   &__item{
     padding: 50px;
   }
 }
 @each $num , $color in $degrade-section3  {
   .section3__bg#{$num}{
+    text-align: left;
     background-color: $color;
+  }
+}
+
+.section4{
+  @extend %flex;
+  @include padding-margin(30px 0, auto);
+  color: #fff;
+  &__title h2{
+    font-size: 1.7rem;
+  }
+  button{
+    color: #fff;
+    @include padding-margin(5px 50px, 5px );
+    // border: 0;s
+    border-radius: 3px;
+  }
+  &__button{
+    float: left;
+    &--sup{
+      border: 0;
+      background-color: $color-btn;
+    }
+    &--inf{
+      background:none;
+    }
+  }
+}
+.footer{
+  background-color: rgba(64, 64, 64, 0.74);
+  height: 30vh;
+  text-align: center;
+  @extend %flex;
+  &__icons a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    @include padding-margin(auto, 4px 10px);
+  }
+}
+@media (max-width:765px) {
+  body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/pic05.jpg');
   }
 }

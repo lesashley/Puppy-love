@@ -48,3 +48,23 @@
     }
   }
 }
+.section1{
+  background-color: $color-principal;
+  height: 100vh;
+  @extend %flex;
+  &__title{
+    color: #fff;
+    text-align: center;
+  }
+  hr{
+    border-color: rgb(145, 145, 145);
+    color: rgb(147, 147, 147);
+    width: 67%;
+  }
+  &__icons{
+    @extend %flex;
+   &--mg{
+     margin: 25px;
+   }
+  }
+}

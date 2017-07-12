@@ -2,15 +2,16 @@ h1 {
   font-size: 2.3rem; }
 
 h2 {
-  font-size: 1.3rem; }
+  font-size: 1.2rem;
+  font-weight: bold; }
 
-h3 {
-  font-size: 1.2rem; }
+h4 {
+  font-size: 1rem; }
 
 * {
   font-family: 'Open Sans', sans-serif; }
 
-.home {
+.home, .section1, .section1__icons {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -40,5 +41,18 @@ h3 {
       font-size: 1.3rem;
       letter-spacing: 2px;
       margin: 0; }
+
+.section1 {
+  background-color: #21B2A6;
+  height: 100vh; }
+  .section1__title {
+    color: #fff;
+    text-align: center; }
+  .section1 hr {
+    border-color: #919191;
+    color: #939393;
+    width: 67%; }
+  .section1__icons--mg {
+    margin: 25px; }
 
 /*# sourceMappingURL=style.css.map */

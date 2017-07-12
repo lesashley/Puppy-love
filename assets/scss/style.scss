@@ -86,3 +86,17 @@
     padding: 0;
   }
 }
+
+.section3{
+  padding-bottom: 30px;
+  background-color: $color-terciario;
+  color: #fff;
+  &__item{
+    padding: 50px;
+  }
+}
+@each $num , $color in $degrade-section3  {
+  .section3__bg#{$num}{
+    background-color: $color;
+  }
+}

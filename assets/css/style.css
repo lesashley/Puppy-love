@@ -68,4 +68,29 @@ h4 {
   .section2 .row .col {
     padding: 0; }
 
+.section3 {
+  padding-bottom: 30px;
+  background-color: #505393;
+  color: #fff; }
+  .section3__item {
+    padding: 50px; }
+
+.section3__bg1 {
+  background-color: #4e508e; }
+
+.section3__bg2 {
+  background-color: #4b4d89; }
+
+.section3__bg3 {
+  background-color: #484b84; }
+
+.section3__bg4 {
+  background-color: #45487f; }
+
+.section3__bg5 {
+  background-color: #42457a; }
+
+.section3__bg6 {
+  background-color: #3f4275; }
+
 /*# sourceMappingURL=style.css.map */
